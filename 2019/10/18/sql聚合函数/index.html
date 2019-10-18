@@ -6,19 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>sql数据查询 | Hexo</title>
+  <title>sql聚合函数 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="关键字select  查询对象  from  表名  where  查询条件distinct  将重复的信息合并litmit  查询的信息分页显示，可控制每页显示信息数litmit  (要查询的页数-1）×  每页显示信息数，每页显示信息数；order  by  排序asc  升序（默认为升序）desc  降序select  *  from  表名  order  by  信息名  asc；">
+  <meta name="description" content="聚合函数聚合函数对一组值执行计算并返回单一的值。除 COUNT 以外，聚合函数忽略空值，如果COUNT函数的应用对象是一个确定列名，并且该列存在空值，此时COUNT仍会忽略空值。分组查询关键字：GROUP BY使用HAVING只能判断聚合函数例如查询男生和女生的年龄大于15的人数，只保留人数大于3的；SELECT count(1),sex  FROM  s_stu  WHERE  age &amp;gt;">
 <meta property="og:type" content="article">
-<meta property="og:title" content="sql数据查询">
-<meta property="og:url" content="http://yoursite.com/2019/10/16/sql数据查询/index.html">
+<meta property="og:title" content="sql聚合函数">
+<meta property="og:url" content="http://yoursite.com/2019/10/18/sql聚合函数/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="关键字select  查询对象  from  表名  where  查询条件distinct  将重复的信息合并litmit  查询的信息分页显示，可控制每页显示信息数litmit  (要查询的页数-1）×  每页显示信息数，每页显示信息数；order  by  排序asc  升序（默认为升序）desc  降序select  *  from  表名  order  by  信息名  asc；">
+<meta property="og:description" content="聚合函数聚合函数对一组值执行计算并返回单一的值。除 COUNT 以外，聚合函数忽略空值，如果COUNT函数的应用对象是一个确定列名，并且该列存在空值，此时COUNT仍会忽略空值。分组查询关键字：GROUP BY使用HAVING只能判断聚合函数例如查询男生和女生的年龄大于15的人数，只保留人数大于3的；SELECT count(1),sex  FROM  s_stu  WHERE  age &amp;gt;">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-10-16T08:29:25.014Z">
+<meta property="og:updated_time" content="2019-10-18T01:36:19.149Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="sql数据查询">
-<meta name="twitter:description" content="关键字select  查询对象  from  表名  where  查询条件distinct  将重复的信息合并litmit  查询的信息分页显示，可控制每页显示信息数litmit  (要查询的页数-1）×  每页显示信息数，每页显示信息数；order  by  排序asc  升序（默认为升序）desc  降序select  *  from  表名  order  by  信息名  asc；">
+<meta name="twitter:title" content="sql聚合函数">
+<meta name="twitter:description" content="聚合函数聚合函数对一组值执行计算并返回单一的值。除 COUNT 以外，聚合函数忽略空值，如果COUNT函数的应用对象是一个确定列名，并且该列存在空值，此时COUNT仍会忽略空值。分组查询关键字：GROUP BY使用HAVING只能判断聚合函数例如查询男生和女生的年龄大于15的人数，只保留人数大于3的；SELECT count(1),sex  FROM  s_stu  WHERE  age &amp;gt;">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -154,27 +154,55 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-sql数据查询" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-sql聚合函数" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      sql数据查询
+      sql聚合函数
     </h1>
   
 
         
-        <a href="/2019/10/16/sql数据查询/" class="archive-article-date">
-  	<time datetime="2019-10-16T08:08:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-16</time>
+        <a href="/2019/10/18/sql聚合函数/" class="archive-article-date">
+  	<time datetime="2019-10-18T01:24:53.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-18</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="关键字"><a href="#关键字" class="headerlink" title="关键字"></a>关键字</h3><p>select  查询对象  from  表名  where  查询条件<br>distinct  将重复的信息合并<br>litmit  查询的信息分页显示，可控制每页显示信息数<br>litmit  (要查询的页数-1）×  每页显示信息数，每页显示信息数；<br>order  by  排序<br>asc  升序（默认为升序）<br>desc  降序<br>select  *  from  表名  order  by  信息名  asc；</p>
+        <h3 id="聚合函数"><a href="#聚合函数" class="headerlink" title="聚合函数"></a>聚合函数</h3><p>聚合函数对一组值执行计算并返回单一的值。除 COUNT 以外，聚合函数忽略空值，如果COUNT函数的应用对象是一个确定列名，并且该列存在空值，此时COUNT仍会忽略空值。<br>分组查询关键字：GROUP BY<br>使用HAVING只能判断聚合函数<br>例如<br>查询男生和女生的年龄大于15的人数，只保留人数大于3的；<br>SELECT count(1),sex  FROM  s_stu  WHERE  age &gt; 15  GROUP BY sex HAVING count(1) &gt;= 3;</p>
+<h3 id="函数关键字"><a href="#函数关键字" class="headerlink" title="函数关键字"></a>函数关键字</h3><table>
+<thead>
+<tr>
+<th>函数名</th>
+<th>关键字</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>求和</td>
+<td>SUM</td>
+</tr>
+<tr>
+<td>最小值</td>
+<td>MIN</td>
+</tr>
+<tr>
+<td>最大值</td>
+<td>MAX</td>
+</tr>
+<tr>
+<td>平均值</td>
+<td>AVG</td>
+</tr>
+<tr>
+<td>统计数量</td>
+<td>COUNT</td>
+</tr>
+</tbody></table>
 
       
 
@@ -254,7 +282,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/10/16/sql数据查询/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/10/18/sql聚合函数/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -268,18 +296,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/10/18/sql聚合函数/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          sql聚合函数
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/10/15/sql运算符/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">sql运算符</div>
+    <a href="/2019/10/16/sql数据查询/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">sql数据查询</div>
       <i class="icon-circle-right"></i>
     </a>
   

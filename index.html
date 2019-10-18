@@ -152,6 +152,97 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-sql聚合函数" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/10/18/sql聚合函数/">sql聚合函数</a>
+    </h1>
+  
+
+        
+        <a href="/2019/10/18/sql聚合函数/" class="archive-article-date">
+  	<time datetime="2019-10-18T01:24:53.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-18</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="聚合函数"><a href="#聚合函数" class="headerlink" title="聚合函数"></a>聚合函数</h3><p>聚合函数对一组值执行计算并返回单一的值。除 COUNT 以外，聚合函数忽略空值，如果COUNT函数的应用对象是一个确定列名，并且该列存在空值，此时COUNT仍会忽略空值。<br>分组查询关键字：GROUP BY<br>使用HAVING只能判断聚合函数<br>例如<br>查询男生和女生的年龄大于15的人数，只保留人数大于3的；<br>SELECT count(1),sex  FROM  s_stu  WHERE  age &gt; 15  GROUP BY sex HAVING count(1) &gt;= 3;</p>
+<h3 id="函数关键字"><a href="#函数关键字" class="headerlink" title="函数关键字"></a>函数关键字</h3><table>
+<thead>
+<tr>
+<th>函数名</th>
+<th>关键字</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>求和</td>
+<td>SUM</td>
+</tr>
+<tr>
+<td>最小值</td>
+<td>MIN</td>
+</tr>
+<tr>
+<td>最大值</td>
+<td>MAX</td>
+</tr>
+<tr>
+<td>平均值</td>
+<td>AVG</td>
+</tr>
+<tr>
+<td>统计数量</td>
+<td>COUNT</td>
+</tr>
+</tbody></table>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/10/18/sql聚合函数/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-sql数据查询" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
