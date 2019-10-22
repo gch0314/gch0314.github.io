@@ -6,15 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Hexo</title>
+  <title>sql联合查询 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="内连接查询SELECT t1.name,t2.source FROM stu t1  INNER JOIN stu_score t2 on t1.score_id=t2.id;关键字：INNER  JOIN……ON 左连接查询SELECT  t1.name,t2.source FROM stu t1  LEFT JOIN stu_score t2  on  t1.score_id=t2.id;关键">
+<meta property="og:type" content="article">
+<meta property="og:title" content="sql联合查询">
+<meta property="og:url" content="http://yoursite.com/2019/10/22/sql多表联合查询（2）/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="内连接查询SELECT t1.name,t2.source FROM stu t1  INNER JOIN stu_score t2 on t1.score_id=t2.id;关键字：INNER  JOIN……ON 左连接查询SELECT  t1.name,t2.source FROM stu t1  LEFT JOIN stu_score t2  on  t1.score_id=t2.id;关键">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-10-22T03:13:54.031Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="sql联合查询">
+<meta name="twitter:description" content="内连接查询SELECT t1.name,t2.source FROM stu t1  INNER JOIN stu_score t2 on t1.score_id=t2.id;关键字：INNER  JOIN……ON 左连接查询SELECT  t1.name,t2.source FROM stu t1  LEFT JOIN stu_score t2  on  t1.score_id=t2.id;关键">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -150,16 +154,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-sql多表联合查询（2）" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-sql多表联合查询（2）" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/10/22/sql多表联合查询（2）/">sql联合查询</a>
+    <h1 class="article-title" itemprop="name">
+      sql联合查询
     </h1>
   
 
@@ -181,6 +183,27 @@
       
 
       
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
     </div>
     <div class="article-info article-info-index">
       
@@ -188,16 +211,75 @@
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/10/22/sql多表联合查询（2）/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/10/22/sql多表联合查询（2）/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2019/10/21/sql多表联合查询/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">多表联合查询</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -217,409 +299,14 @@
 
 
 
-
   
-    <article id="w-sql多表联合查询" class="article article-type-w  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/10/21/sql多表联合查询/">多表联合查询</a>
-    </h1>
   
 
-        
-        <a href="/2019/10/21/sql多表联合查询/" class="archive-article-date">
-  	<time datetime="2019-10-21T06:39:10.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-21</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="例："><a href="#例：" class="headerlink" title="例："></a>例：</h3><p>表1：stu<br>表2：tea<br>SELECT   t1.表1要搜索的内容,t2.表2要搜索的内容  FROM  stu t1,stu_score t2   WHERE t2.id=t1.score_id;<br>WHERE语句后必须先写主外键连接关系，主键=外键，stu t1是指stu的简称，明确简称后，前后必须都更换为简称。</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/10/21/sql多表联合查询/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-sql聚合函数" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/10/18/sql聚合函数/">sql聚合函数</a>
-    </h1>
   
 
-        
-        <a href="/2019/10/18/sql聚合函数/" class="archive-article-date">
-  	<time datetime="2019-10-18T01:24:53.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-18</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="聚合函数"><a href="#聚合函数" class="headerlink" title="聚合函数"></a>聚合函数</h3><p>聚合函数对一组值执行计算并返回单一的值。除 COUNT 以外，聚合函数忽略空值，如果COUNT函数的应用对象是一个确定列名，并且该列存在空值，此时COUNT仍会忽略空值。<br>分组查询关键字：GROUP BY<br>使用HAVING只能判断聚合函数<br>例如<br>查询男生和女生的年龄大于15的人数，只保留人数大于3的；<br>SELECT count(1),sex  FROM  s_stu  WHERE  age &gt; 15  GROUP BY sex HAVING count(1) &gt;= 3;</p>
-<h3 id="函数关键字"><a href="#函数关键字" class="headerlink" title="函数关键字"></a>函数关键字</h3><table>
-<thead>
-<tr>
-<th>函数名</th>
-<th>关键字</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>求和</td>
-<td>SUM</td>
-</tr>
-<tr>
-<td>最小值</td>
-<td>MIN</td>
-</tr>
-<tr>
-<td>最大值</td>
-<td>MAX</td>
-</tr>
-<tr>
-<td>平均值</td>
-<td>AVG</td>
-</tr>
-<tr>
-<td>统计数量</td>
-<td>COUNT</td>
-</tr>
-</tbody></table>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/10/18/sql聚合函数/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-sql数据查询" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/10/16/sql数据查询/">sql数据查询</a>
-    </h1>
   
 
-        
-        <a href="/2019/10/16/sql数据查询/" class="archive-article-date">
-  	<time datetime="2019-10-16T08:08:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-16</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="关键字"><a href="#关键字" class="headerlink" title="关键字"></a>关键字</h3><p>select  查询对象  from  表名  where  查询条件<br>distinct  将重复的信息合并<br>litmit  查询的信息分页显示，可控制每页显示信息数<br>litmit  (要查询的页数-1）×  每页显示信息数，每页显示信息数；<br>order  by  排序<br>asc  升序（默认为升序）<br>desc  降序<br>select  *  from  表名  order  by  信息名  asc；</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/10/16/sql数据查询/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-sql运算符" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/10/15/sql运算符/">sql运算符</a>
-    </h1>
-  
-
-        
-        <a href="/2019/10/15/sql运算符/" class="archive-article-date">
-  	<time datetime="2019-10-15T09:13:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-15</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="比较运算符"><a href="#比较运算符" class="headerlink" title="比较运算符"></a>比较运算符</h2><table>
-<thead>
-<tr>
-<th>运算符</th>
-<th>含义</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>&gt;</td>
-<td>大于</td>
-</tr>
-<tr>
-<td>&gt;=</td>
-<td>大于等于</td>
-</tr>
-<tr>
-<td>&lt;</td>
-<td>小于</td>
-</tr>
-<tr>
-<td>&lt;=</td>
-<td>小于等于</td>
-</tr>
-<tr>
-<td>=</td>
-<td>等于</td>
-</tr>
-<tr>
-<td>!=或&lt;&gt;</td>
-<td>不等于</td>
-</tr>
-<tr>
-<td>IS  NULL</td>
-<td>是否为空</td>
-</tr>
-<tr>
-<td>IS  NOT  NULL</td>
-<td>是否不为空</td>
-</tr>
-<tr>
-<td>IN</td>
-<td>判断一个值是IN列表中的任意一个值</td>
-</tr>
-<tr>
-<td>NOT  IN</td>
-<td>判断一个值不是IN列表中的任意一个值</td>
-</tr>
-<tr>
-<td>LIKE</td>
-<td>通配符匹配   “通配符%是指任意长度，通配符_是指一个字符”</td>
-</tr>
-<tr>
-<td>BETWEEN  AND</td>
-<td>判断一个值是否在两个值之间</td>
-</tr>
-</tbody></table>
-<h2 id="逻辑运算符"><a href="#逻辑运算符" class="headerlink" title="逻辑运算符"></a>逻辑运算符</h2><p> 或：OR(或者||)<br> 与：And(或者&amp;&amp;)<br> 非：Not(或者！）</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/10/15/sql运算符/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-使用SQL命令修改表中数据" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/10/15/使用SQL命令修改表中数据/">使用SQL命令修改表中数据</a>
-    </h1>
-  
-
-        
-        <a href="/2019/10/15/使用SQL命令修改表中数据/" class="archive-article-date">
-  	<time datetime="2019-10-15T08:38:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-15</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="增加"><a href="#增加" class="headerlink" title="增加"></a>增加</h3><p>insert  into  表名(字段1，字段2，字段3，字段4)  values(值1，值2，值3，值4);</p>
-<h3 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h3><p>Delete  from  表名  where  条件字段=值；</p>
-<h3 id="更新"><a href="#更新" class="headerlink" title="更新"></a>更新</h3><p>update  表名  set  要更改的字段=值，where  条件字段=值</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/10/15/使用SQL命令修改表中数据/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
 
 
@@ -642,8 +329,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
