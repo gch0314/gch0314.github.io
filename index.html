@@ -152,6 +152,73 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-sql子查询" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/10/23/sql子查询/">sql子查询</a>
+    </h1>
+  
+
+        
+        <a href="/2019/10/23/sql子查询/" class="archive-article-date">
+  	<time datetime="2019-10-23T09:20:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-23</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>– 用一条 SQL 语句查询出每门课都大于 80 分的学生姓名<br>– 难点：每门课的分数 – 解决方案：把分数少于80分的进行排除</p>
+<h3 id="not-in-字段"><a href="#not-in-字段" class="headerlink" title="not in 字段"></a>not in 字段</h3><p>SELECT * FROM score  WHERE NAME NOT IN (SELECT  NAME FROM score WHERE score&lt;=80)</p>
+<h3 id="not-exists-字段"><a href="#not-exists-字段" class="headerlink" title="not exists 字段"></a>not exists 字段</h3><p>SELECT  *  FROM  score a  WHERE NOT EXISTS (SELECT   *   FROM score b WHERE a.name = b.name AND b.score &lt; 80) ;</p>
+<h3 id="all-方法"><a href="#all-方法" class="headerlink" title="all()方法"></a>all()方法</h3><p>SELECT * FROM score a WHERE 80 &lt; ALL(SELECT score FROM score WHERE a.name = NAME );</p>
+<h3 id="any-方法"><a href="#any-方法" class="headerlink" title="any()方法"></a>any()方法</h3><p>SELECT * FROM score a WHERE 80 &lt; any(SELECT score FROM score WHERE a.name = NAME );</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/10/23/sql子查询/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-sql多表联合查询（2）" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
